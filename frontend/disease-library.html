@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Disease Library</title>
+
+<link rel="stylesheet"
+href="css/disease-library.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>📚 Disease Library</h2>
+
+<p>Explore common crop diseases</p>
+
+<input type="text"
+id="searchBox"
+placeholder="🔍 Search Disease...">
+
+<div class="crop-grid">
+
+<div class="crop-card"
+onclick="openCrop('Tomato')">
+
+<img src="images/tomato.jpg">
+
+<h3>🍅 Tomato</h3>
+
+<p>10 Diseases Available</p>
+
+</div>
+
+<div class="crop-card"
+onclick="openCrop('Rice')">
+
+<img src="images/rice.jpg">
+
+<h3>🌾 Rice</h3>
+
+<p>8 Diseases Available</p>
+
+</div>
+
+<div class="crop-card"
+onclick="openDisease('potato')">
+
+<img src="images/potato.jpg">
+
+<h3>🥔 Potato</h3>
+
+<p>7 Diseases Available</p>
+
+</div>
+
+<div class="crop-card"
+onclick="openDisease('corn')">
+
+<img src="images/corn.jpg">
+
+<h3>🌽 Corn</h3>
+
+<p>6 Diseases Available</p>
+
+</div>
+
+</div>
+
+<div class="recent-section">
+
+<h3>🌍 Recently Added Diseases</h3>
+
+<ul>
+
+<li>🍅 Tomato Early Blight</li>
+
+<li>🌾 Rice Blast</li>
+
+<li>🥔 Potato Late Blight</li>
+
+<li>🌽 Corn Rust</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<script src="js/disease-library.js"></script>
+
+</body>
+</html>

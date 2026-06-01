@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PlantCare AI Dashboard</title>
+
+<link rel="stylesheet" href="css/home.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Navbar -->
+
+    <div class="navbar">
+
+        <div class="logo">
+            🌱 PlantCare AI
+        </div>
+
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-microphone"></i>
+
+            <i class="fa-solid fa-bell"></i>
+
+            <i class="fa-solid fa-user"></i>
+
+        </div>
+
+    </div>
+
+    <!-- Welcome -->
+
+    <div class="welcome">
+
+        <h2>Hello Anjlee 👋</h2>
+
+        <p>Let's keep your crops healthy today</p>
+
+    </div>
+
+    <!-- Camera & Upload -->
+
+    <div class="action-grid">
+
+        <div class="action-card"
+             onclick="openCamera()">
+
+            <i class="fa-solid fa-camera"></i>
+
+            <h3>Open Camera</h3>
+
+        </div>
+
+        <div class="action-card"
+             onclick="uploadImage()">
+
+            <i class="fa-solid fa-image"></i>
+
+            <h3>Upload Image</h3>
+
+        </div>
+
+    </div>
+
+    <!-- Stats -->
+
+    <div class="section">
+
+        <h3>📊 Quick Stats</h3>
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <h2>0</h2>
+
+                <p>Total Scans</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>0</h2>
+
+                <p>Healthy</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>0</h2>
+
+                <p>Diseased</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Weather -->
+
+    <div class="section">
+
+        <h3>🌦 Smart Weather</h3>
+
+        <p>Temperature : 30°C</p>
+
+        <p>Humidity : 82%</p>
+
+        <p class="risk">🔴 Disease Risk : HIGH</p>
+
+    </div>
+
+    <!-- Disease Alert -->
+
+    <div class="section alert">
+
+        <h3>🚨 Disease Alert</h3>
+
+        <p>
+            High humidity may increase fungal
+            infections in tomato crops.
+        </p>
+
+    </div>
+
+    <!-- Tasks -->
+
+    <div class="section">
+
+        <h3>📅 Today's Tasks</h3>
+
+        <ul>
+
+            <li>✔ Water Tomato Plants</li>
+
+            <li>✔ Spray Neem Oil</li>
+
+            <li>✔ Check Potato Leaves</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Disease Library -->
+
+    <div class="section">
+
+        <h3>📚 Disease Library</h3>
+
+        <div class="library-grid">
+
+            <div class="library-card">
+                🍅
+                <h4>Tomato</h4>
+                <p>10 Diseases</p>
+            </div>
+
+            <div class="library-card">
+                🌾
+                <h4>Rice</h4>
+                <p>8 Diseases</p>
+            </div>
+
+            <div class="library-card">
+                🥔
+                <h4>Potato</h4>
+                <p>7 Diseases</p>
+            </div>
+
+            <div class="library-card">
+                🌽
+                <h4>Corn</h4>
+                <p>6 Diseases</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Community Discoveries -->
+
+    <div class="section">
+
+        <h3>🌍 Community Discoveries</h3>
+
+        <div class="community-card">
+
+            🍅 Tomato Early Blight
+
+            <br>
+
+            Confidence : 96%
+
+        </div>
+
+        <div class="community-card">
+
+            🌾 Rice Blast
+
+            <br>
+
+            Confidence : 94%
+
+        </div>
+
+    </div>
+
+    <!-- Recent Scans -->
+
+    <div class="section">
+
+        <h3>🕒 Recent Scans</h3>
+
+        <p>No scans yet</p>
+
+    </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+
+<div class="bottom-nav">
+
+    <div onclick="goHome()">
+        🏠<br>Home
+    </div>
+
+    <div onclick="goScan()">
+        📷<br>Scan
+    </div>
+
+    <div onclick="goLibrary()">
+        📚<br>Library
+    </div>
+
+    <div onclick="goHistory()">
+        📜<br>History
+    </div>
+
+    <div onclick="goProfile()">
+        👤<br>Profile
+    </div>
+
+</div>
+
+<script src="js/home.js"></script>
+
+</body>
+</html>

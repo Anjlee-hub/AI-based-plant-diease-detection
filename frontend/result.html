@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Detection Result</title>
+
+<link rel="stylesheet"
+href="css/result.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h2>🌱 Detection Result</h2>
+
+<button class="audio-btn"
+onclick="speakResult()">
+
+🔊 Listen Result
+
+</button>
+
+</div>
+
+<!-- Disease Card -->
+
+<div class="result-card">
+
+<img
+src="images/tomato-blight.jpg"
+alt="Disease Image"
+class="disease-image">
+
+<h2>🍅 Tomato Early Blight</h2>
+
+<p class="confidence">
+Confidence : 96%
+</p>
+
+<div class="severity">
+
+<span class="moderate">
+🟠 Moderate Risk
+</span>
+
+</div>
+
+</div>
+
+<!-- Description -->
+
+<div class="section">
+
+<h3>📖 Description</h3>
+
+<p>
+Early Blight is a fungal disease
+that affects tomato plants and
+causes leaf damage.
+</p>
+
+</div>
+
+<!-- Symptoms -->
+
+<div class="section">
+
+<h3>⚠ Symptoms</h3>
+
+<ul>
+
+<li>Brown leaf spots</li>
+
+<li>Yellow leaves</li>
+
+<li>Leaf drying</li>
+
+<li>Reduced plant growth</li>
+
+</ul>
+
+</div>
+
+<!-- Treatment -->
+
+<div class="section">
+
+<h3>💊 Recommended Treatment</h3>
+
+<p>
+
+<b>Organic:</b>
+
+Neem Oil Spray
+
+</p>
+
+<br>
+
+<p>
+
+<b>Chemical:</b>
+
+Mancozeb Fungicide
+
+</p>
+
+</div>
+
+<!-- Prevention -->
+
+<div class="section">
+
+<h3>🛡 Prevention Tips</h3>
+
+<ul>
+
+<li>Avoid overwatering</li>
+
+<li>Improve air circulation</li>
+
+<li>Remove infected leaves</li>
+
+<li>Use healthy seeds</li>
+
+</ul>
+
+</div>
+
+<!-- Buttons -->
+
+<div class="button-group">
+
+<button
+class="save-btn"
+onclick="saveHistory()">
+
+💾 Save To History
+
+</button>
+
+<button
+class="home-btn"
+onclick="goHome()">
+
+🏠 Back To Home
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/result.js"></script>
+
+</body>
+
+</html>

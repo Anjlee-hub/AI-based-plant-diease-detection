@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4fff4;
+    padding-bottom:90px;
+}
+
+.container{
+    padding:20px;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#2e7d32;
+}
+
+.nav-icons i{
+    font-size:22px;
+    margin-left:15px;
+    cursor:pointer;
+    color:#2e7d32;
+}
+
+/* Welcome */
+
+.welcome{
+    margin-bottom:20px;
+}
+
+.welcome h2{
+    color:#222;
+    margin-bottom:5px;
+}
+
+.welcome p{
+    color:#666;
+}
+
+/* Action Cards */
+
+.action-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.action-card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    cursor:pointer;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.action-card:hover{
+    transform:translateY(-4px);
+}
+
+.action-card i{
+    font-size:35px;
+    color:#4CAF50;
+    margin-bottom:10px;
+}
+
+.action-card h3{
+    font-size:16px;
+}
+
+/* Common Sections */
+
+.section{
+    background:white;
+    padding:18px;
+    border-radius:20px;
+    margin-bottom:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.section h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+/* Stats */
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+}
+
+.stat-card{
+    flex:1;
+    text-align:center;
+    background:#f7fff7;
+    padding:15px;
+    border-radius:15px;
+}
+
+.stat-card h2{
+    color:#2e7d32;
+}
+
+.stat-card p{
+    font-size:13px;
+    color:#666;
+}
+
+/* Weather */
+
+.risk{
+    margin-top:10px;
+    font-weight:bold;
+    color:red;
+}
+
+/* Alert */
+
+.alert{
+    border-left:6px solid #ff9800;
+}
+
+/* Tasks */
+
+.section ul{
+    padding-left:20px;
+}
+
+.section ul li{
+    margin-bottom:8px;
+}
+
+/* Disease Library */
+
+.library-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.library-card{
+    background:#f7fff7;
+    border-radius:15px;
+    padding:18px;
+    text-align:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.library-card:hover{
+    background:#e8fbe8;
+}
+
+.library-card h4{
+    margin-top:8px;
+    color:#2e7d32;
+}
+
+.library-card p{
+    font-size:12px;
+    color:#666;
+}
+
+/* Community */
+
+.community-card{
+    background:#f7fff7;
+    padding:12px;
+    border-radius:12px;
+    margin-bottom:10px;
+}
+
+/* Bottom Navigation */
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    padding:12px 0;
+    box-shadow:0 -3px 10px rgba(0,0,0,0.1);
+}
+
+.bottom-nav div{
+    text-align:center;
+    font-size:14px;
+    cursor:pointer;
+    color:#2e7d32;
+    font-weight:500;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Scan Plant</title>
+
+<link rel="stylesheet"
+href="css/scan.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Header -->
+
+<div class="header">
+
+<h2>🌱 Plant Disease Scanner</h2>
+
+<p>Upload or capture a plant image</p>
+
+</div>
+
+<!-- Upload Section -->
+
+<div class="upload-card">
+
+<img id="previewImage"
+src="images/healthy.png"
+alt="Preview">
+
+<input type="file"
+id="imageInput"
+accept="image/*"
+hidden>
+
+<div class="button-row">
+
+<button onclick="chooseImage()">
+
+📁 Upload
+
+</button>
+
+<button onclick="openCamera()">
+
+📷 Camera
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Voice Section -->
+
+<div class="voice-card">
+
+<h3>🎤 Describe the Problem</h3>
+
+<p>
+Speak in your preferred language
+</p>
+
+<button onclick="startVoice()">
+
+Start Speaking
+
+</button>
+
+<textarea
+id="voiceText"
+placeholder="Voice text will appear here...">
+</textarea>
+
+</div>
+
+<!-- Detect Button -->
+
+<button
+class="detect-btn"
+onclick="detectDisease()">
+
+🔍 Detect Disease
+
+</button>
+
+</div>
+
+<script src="js/scan.js"></script>
+
+</body>
+
+</html>
