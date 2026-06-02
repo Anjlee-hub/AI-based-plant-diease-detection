@@ -1,0 +1,39 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4fff4;
+}
+
+.container{
+padding:20px;
+}
+
+h2{
+color:#2e7d32;
+margin-bottom:20px;
+}
+
+.disease-card{
+
+background:white;
+
+padding:15px;
+
+border-radius:15px;
+
+margin-bottom:12px;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+cursor:pointer;
+}
+
+.disease-card h3{
+color:#2e7d32;
+margin-bottom:5px;
+}
