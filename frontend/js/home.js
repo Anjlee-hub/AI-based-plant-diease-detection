@@ -25,3 +25,17 @@ function goHistory(){
 function goProfile(){
     window.location.href = "profile.html";
 }
+
+function goNotifications(){
+
+window.location.href =
+"notifications.html";
+
+}
+
+function goCommunity(){
+
+window.location.href =
+"community.html";
+
+}
