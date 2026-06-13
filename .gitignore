@@ -1,0 +1,21 @@
+# Python virtual environment
+venv/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# IDE and OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Build directories
+target/
+
+# Data and model artifacts
+PlantVillage/
+ai_model/plant_saved_model/
+ai_model/uploads/

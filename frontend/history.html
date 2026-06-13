@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Scan History</title>
+
+<link rel="stylesheet"
+href="css/history.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h2>📜 Scan History</h2>
+
+<p>View your previous plant scans</p>
+
+</div>
+
+<input
+type="text"
+id="searchBox"
+placeholder="🔍 Search history...">
+
+<div class="history-list" id="historyList">
+
+<div class="history-card">
+
+<div class="icon">
+🍅
+</div>
+
+<div class="details">
+
+<h3>Tomato Early Blight</h3>
+
+<p>Confidence: 96%</p>
+
+<p>Date: 15 June 2026</p>
+
+</div>
+
+</div>
+
+<div class="history-card">
+
+<div class="icon">
+🌾
+</div>
+
+<div class="details">
+
+<h3>Rice Blast</h3>
+
+<p>Confidence: 92%</p>
+
+<p>Date: 14 June 2026</p>
+
+</div>
+
+</div>
+
+<div class="history-card">
+
+<div class="icon">
+🥔
+</div>
+
+<div class="details">
+
+<h3>Healthy Plant</h3>
+
+<p>Confidence: 99%</p>
+
+<p>Date: 12 June 2026</p>
+
+</div>
+
+</div>
+
+</div>
+
+<button
+class="clear-btn"
+onclick="clearHistory()">
+
+🗑 Clear History
+
+</button>
+
+</div>
+
+<script src="js/history.js"></script>
+
+</body>
+
+</html>

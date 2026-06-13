@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    padding:20px;
+    padding:25px;
 }
 
 /* Navbar */
@@ -20,18 +20,18 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:25px;
+    margin-bottom:35px;
 }
 
 .logo{
-    font-size:24px;
+    font-size:30px;
     font-weight:bold;
     color:#2e7d32;
 }
 
 .nav-icons i{
-    font-size:22px;
-    margin-left:15px;
+    font-size:28px;
+    margin-left:22px;
     cursor:pointer;
     color:#2e7d32;
 }
@@ -39,16 +39,19 @@ body{
 /* Welcome */
 
 .welcome{
-    margin-bottom:20px;
+    margin-bottom:25px;
+    text-align:left;
 }
 
 .welcome h2{
     color:#222;
-    margin-bottom:5px;
+    margin-bottom:8px;
+    font-size:34px;
 }
 
 .welcome p{
     color:#666;
+    font-size:21px;
 }
 
 /* Action Cards */
@@ -56,17 +59,18 @@ body{
 .action-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:15px;
-    margin-bottom:20px;
+    gap:22px;
+    margin-bottom:25px;
 }
 
 .action-card{
     background:white;
-    padding:25px;
-    border-radius:20px;
+    padding:35px;
+    min-height:145px;
+    border-radius:25px;
     text-align:center;
     cursor:pointer;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
     transition:0.3s;
 }
 
@@ -75,28 +79,51 @@ body{
 }
 
 .action-card i{
-    font-size:35px;
+    font-size:42px;
     color:#4CAF50;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .action-card h3{
-    font-size:16px;
+    font-size:20px;
 }
 
 /* Common Sections */
 
 .section{
     background:white;
-    padding:18px;
-    border-radius:20px;
-    margin-bottom:15px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    padding:25px;
+    border-radius:25px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 .section h3{
     color:#2e7d32;
-    margin-bottom:10px;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.section p{
+    font-size:20px;
+    margin-bottom:6px;
+}
+
+/* Explore Community Button Fix */
+
+.section button{
+    padding:12px 20px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:17px;
+    cursor:pointer;
+    margin-top:8px;
+}
+
+.section button:hover{
+    background:#256428;
 }
 
 /* Stats */
@@ -104,30 +131,31 @@ body{
 .stats{
     display:flex;
     justify-content:space-between;
-    gap:10px;
+    gap:15px;
 }
 
 .stat-card{
     flex:1;
     text-align:center;
     background:#f7fff7;
-    padding:15px;
-    border-radius:15px;
+    padding:25px;
+    border-radius:18px;
 }
 
 .stat-card h2{
     color:#2e7d32;
+    font-size:30px;
 }
 
 .stat-card p{
-    font-size:13px;
+    font-size:16px;
     color:#666;
 }
 
 /* Weather */
 
 .risk{
-    margin-top:10px;
+    margin-top:15px;
     font-weight:bold;
     color:red;
 }
@@ -135,17 +163,18 @@ body{
 /* Alert */
 
 .alert{
-    border-left:6px solid #ff9800;
+    border-left:7px solid #ff9800;
 }
 
 /* Tasks */
 
 .section ul{
-    padding-left:20px;
+    padding-left:25px;
 }
 
 .section ul li{
-    margin-bottom:8px;
+    margin-bottom:10px;
+    font-size:19px;
 }
 
 /* Disease Library */
@@ -153,16 +182,17 @@ body{
 .library-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:12px;
+    gap:18px;
 }
 
 .library-card{
     background:#f7fff7;
-    border-radius:15px;
-    padding:18px;
+    border-radius:18px;
+    padding:28px;
     text-align:center;
     cursor:pointer;
     transition:0.3s;
+    font-size:30px;
 }
 
 .library-card:hover{
@@ -170,12 +200,13 @@ body{
 }
 
 .library-card h4{
-    margin-top:8px;
+    margin-top:10px;
     color:#2e7d32;
+    font-size:20px;
 }
 
 .library-card p{
-    font-size:12px;
+    font-size:16px;
     color:#666;
 }
 
@@ -183,9 +214,10 @@ body{
 
 .community-card{
     background:#f7fff7;
-    padding:12px;
-    border-radius:12px;
-    margin-bottom:10px;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:12px;
+    font-size:18px;
 }
 
 /* Bottom Navigation */
@@ -198,14 +230,36 @@ body{
     background:white;
     display:flex;
     justify-content:space-around;
-    padding:12px 0;
+    padding:15px 0;
     box-shadow:0 -3px 10px rgba(0,0,0,0.1);
 }
 
 .bottom-nav div{
     text-align:center;
-    font-size:14px;
+    font-size:16px;
     cursor:pointer;
     color:#2e7d32;
-    font-weight:500;
+    font-weight:600;
+}
+.welcome{
+    overflow:hidden;
+}
+
+.welcome h2{
+    white-space:nowrap;
+    display:inline-block;
+    font-size:34px;
+    color:#222;
+
+    animation: marqueeHello 11s linear infinite;
+}
+
+@keyframes marqueeHello{
+    from{
+        transform:translateX(100vw);
+    }
+
+    to{
+        transform:translateX(-100%);
+    }
 }

@@ -1,24 +1,95 @@
-document.querySelector("#registerForm")
-.addEventListener("submit", function(e){
+document
+.querySelector("#registerForm")
+.addEventListener("submit", async function(e){
 
-e.preventDefault();
+    e.preventDefault();
 
-let password =
-document.getElementById("password").value;
+    let name =
+    document.querySelector(
+        'input[name="fullname"]'
+    ).value;
 
-let confirmPassword =
-document.getElementById("confirmPassword").value;
+    let phone =
+    document.querySelector(
+        'input[name="phone"]'
+    ).value;
 
-if(password !== confirmPassword){
+    let email =
+    document.querySelector(
+        'input[name="email"]'
+    ).value;
 
-alert("Passwords do not match");
+    let password =
+    document.getElementById(
+        "password"
+    ).value;
 
-return;
+    let confirmPassword =
+    document.getElementById(
+        "confirmPassword"
+    ).value;
 
-}
+    if(password !== confirmPassword){
 
-alert("Registration Successful");
+        alert(
+            "Passwords do not match"
+        );
 
-window.location.href="login.html";
+        return;
+    }
+
+    let user = {
+
+        name: name,
+
+        phone: phone,
+
+        email: email,
+
+        password: password
+
+    };
+
+    try{
+
+        let response =
+        await fetch(
+            "http://localhost:8080/register",
+            {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type":
+                    "application/json"
+                },
+
+                body:
+                JSON.stringify(user)
+
+            }
+        );
+
+        let result =
+        await response.text();
+
+        alert(result);
+
+        if(result ===
+            "Registration Successful"){
+
+            window.location.href =
+            "login.html";
+        }
+
+    }
+    catch(error){
+
+        console.error(error);
+
+        alert(
+            "Server connection failed"
+        );
+    }
 
 });

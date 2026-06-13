@@ -1,32 +1,77 @@
+window.onload = function(){
+
+    let disease =
+    localStorage.getItem(
+        "currentDisease"
+    );
+
+    let confidence =
+    localStorage.getItem(
+        "currentConfidence"
+    );
+
+    document.getElementById(
+        "diseaseName"
+    ).innerText = disease;
+
+    document.getElementById(
+        "confidenceText"
+    ).innerText =
+    "Confidence : " +
+    confidence + "%";
+
+};
+
+
 function speakResult(){
 
-let text = `
-Tomato Early Blight detected.
-Confidence ninety six percent.
-Moderate risk.
-Recommended treatment is Neem Oil Spray.
-`;
+    let disease =
+    localStorage.getItem(
+        "currentDisease"
+    );
 
-let speech =
-new SpeechSynthesisUtterance(text);
+    let confidence =
+    localStorage.getItem(
+        "currentConfidence"
+    );
 
-speech.lang = "en-IN";
+    let text =
 
-window.speechSynthesis.speak(speech);
+    disease +
+
+    " detected with confidence "
+
+    + confidence +
+
+    " percent.";
+
+    let speech =
+    new SpeechSynthesisUtterance(
+        text
+    );
+
+    speech.lang =
+    "en-IN";
+
+    window
+    .speechSynthesis
+    .speak(speech);
 
 }
+
 
 function saveHistory(){
 
-alert(
-"Result saved successfully"
-);
+    alert(
+        "Already saved to history"
+    );
 
 }
 
+
 function goHome(){
 
-window.location.href =
-"home.html";
+    window.location.href =
+    "home.html";
 
 }

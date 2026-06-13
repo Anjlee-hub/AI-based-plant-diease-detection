@@ -37,11 +37,49 @@ reader.readAsDataURL(file);
 
 function detectDisease(){
 
-alert(
-"AI Detection will be connected later"
-);
+    let scanResult = {
 
-window.location.href =
-"result.html";
+        disease:
+        "Tomato Early Blight",
+
+        confidence:
+        96,
+
+        date:
+        new Date()
+        .toLocaleDateString()
+
+    };
+
+    let scans =
+    JSON.parse(
+        localStorage.getItem(
+            "scanHistory"
+        )
+    ) || [];
+
+    scans.push(
+        scanResult
+    );
+
+    localStorage.setItem(
+        "scanHistory",
+        JSON.stringify(
+            scans
+        )
+    );
+
+    localStorage.setItem(
+        "currentDisease",
+        scanResult.disease
+    );
+
+    localStorage.setItem(
+        "currentConfidence",
+        scanResult.confidence
+    );
+
+    window.location.href =
+    "result.html";
 
 }
